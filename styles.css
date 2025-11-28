@@ -192,6 +192,12 @@ input {
     width: fit-content;
 }
 
+.btn--full-width {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
 /* Tags */
 .tag {
     display: inline-flex;
@@ -271,7 +277,7 @@ input {
    Hero Section
    ========================================================================== */
 .hero {
-    padding: 40px 0 0;
+    padding: 32px 0 0;
     background: var(--color-bg-light);
     overflow: hidden;
 }
@@ -279,14 +285,14 @@ input {
 .hero__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 32px;
     align-items: center;
 }
 
 .hero__tags {
     display: flex;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .hero__title {
@@ -301,7 +307,7 @@ input {
 .hero__subtitle {
     font-size: 16px;
     color: var(--color-text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .hero__actions {
@@ -387,42 +393,70 @@ input {
    ========================================================================== */
 .steps {
     padding: 60px 0;
-    background: var(--color-bg-gray);
+    background: white;
+}
+
+.steps__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.steps__content {
+    flex: 1;
 }
 
 .steps .section-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 32px;
 }
 
-.steps__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+.steps__list {
+    display: flex;
+    gap: 40px;
+    padding: 32px;
+    background: var(--color-bg-light);
+    border-radius: var(--radius-lg);
 }
 
 .step {
-    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step__header {
+    display: flex;
+    flex-direction: column;
 }
 
 .step__number {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 500;
-    color: var(--color-text-light);
-    border: 2px solid var(--color-border);
-    border-radius: 50%;
+    color: var(--color-dark);
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
-.step__text {
+.step__title {
     font-size: 14px;
-    color: var(--color-text-secondary);
+    color: var(--color-dark);
     line-height: 1.5;
+    font-weight: 400;
+}
+
+.steps__image {
+    flex-shrink: 0;
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.steps__image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* ==========================================================================
