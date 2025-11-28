@@ -621,7 +621,7 @@ input {
 }
 
 .audience .section-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 48px;
 }
 
@@ -634,7 +634,7 @@ input {
 
 .audience-card {
     padding: 32px 24px;
-    text-align: center;
+    text-align: left;
     background: white;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
@@ -649,7 +649,7 @@ input {
 .audience-card__icon {
     width: 48px;
     height: 48px;
-    margin: 0 auto 16px;
+    margin: 0 0 16px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -802,14 +802,16 @@ input {
 }
 
 .tasks__decor--right {
-    right: -120px;
+    right: -80px;
     top: 50%;
     transform: translateY(-50%);
+    width: 120px;
 }
 
-.tasks__decor--left {
-    left: -120px;
+.tasks__decor--left-briefcase {
+    left: -140px;
     bottom: 20px;
+    width: 280px;
 }
 
 /* ==========================================================================
@@ -819,9 +821,26 @@ input {
     padding: 80px 0;
 }
 
-.help .section-title {
-    text-align: center;
+.help__header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
     margin-bottom: 48px;
+}
+
+.help__image {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.help__image img {
+    width: 100%;
+    height: auto;
+}
+
+.help .section-title {
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .help__grid {
