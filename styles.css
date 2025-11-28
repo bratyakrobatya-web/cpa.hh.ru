@@ -500,7 +500,7 @@ input {
 
 .stats__container {
     display: grid;
-    grid-template-columns: 340px 1fr 420px;
+    grid-template-columns: 360px 1fr 480px;
     gap: 24px;
     align-items: stretch;
 }
@@ -802,16 +802,16 @@ input {
 }
 
 .tasks__decor--right {
-    right: -60px;
-    top: 20%;
-    transform: translateY(-20%);
-    width: 140px;
+    right: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
 }
 
 .tasks__decor--left-briefcase {
-    left: -100px;
-    bottom: 60px;
-    width: 240px;
+    left: -220px;
+    bottom: 20px;
+    width: 280px;
 }
 
 /* ==========================================================================
