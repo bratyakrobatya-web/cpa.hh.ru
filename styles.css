@@ -277,7 +277,7 @@ input {
    Hero Section
    ========================================================================== */
 .hero {
-    padding: 16px 0 0;
+    padding: 8px 0 0;
     background: var(--color-bg-light);
     overflow: hidden;
 }
@@ -473,7 +473,7 @@ input {
 
 .steps__image {
     flex-shrink: 0;
-    width: 320px;
+    width: 240px;
     display: flex;
     align-items: flex-end;
     position: relative;
